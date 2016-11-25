@@ -4,7 +4,7 @@ return [
 
 	/*
 	|--------------------------------------------------------------------------
-	| Switch this package on/off. Usefull for testing...
+	| Bật tắt package này. Dùng cho testing...
 	|--------------------------------------------------------------------------
 	*/
 
@@ -12,19 +12,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | File path where themes will be located.
-    | Can be outside default views path EG: resources/themes
-    | Leave it null if you place your themes in the default views folder
-    | (as defined in config\views.php)
+    | Đường dẫn load thư mục theme.
+    | Để null nếu sử dụng thư mục view mặc định của laravel
     |--------------------------------------------------------------------------
     */
 
-    'themes_path' => realpath(base_path('resources/themes')), // eg: realpath(base_path('resources/themes'))
+    'themes_path' => realpath(base_path('resources/themes')),
 
 	/*
 	|--------------------------------------------------------------------------
-	| Set behavior if an asset is not found in a Theme hierarcy.
-	| Available options: THROW_EXCEPTION | LOG_ERROR | ASSUME_EXISTS | IGNORE
+	| Đặt hành vi DEBUG nếu asset không được tìm thấy trong Theme hierarcy.
+	| Tùy chọn sẵn có: THROW_EXCEPTION | LOG_ERROR | ASSUME_EXISTS | IGNORE
 	|--------------------------------------------------------------------------
 	*/
 
@@ -32,7 +30,7 @@ return [
 
 	/*
 	|--------------------------------------------------------------------------
-	| Set the Active Theme. Can be set at runtime with:
+	| Đặt theme mặc định. Có thể đổi bằng phương thức:
 	|  Themes::set('theme-name');
 	|--------------------------------------------------------------------------
 	*/
@@ -60,7 +58,7 @@ return [
 		'ctxh' => [
 			'extends'	 	=> null,
 			'views-path' 	=> 'ctxh',
-			'asset-path' 	=> 'ctxh',
+			'asset-path' 	=> 'themes/ctxh',
 		],
 
 		// Add your themes here...

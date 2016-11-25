@@ -1,6 +1,6 @@
 <?php
 
-namespace Backpack\Settings\database\seeds;
+//namespace Backpack\Settings\database\seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -14,15 +14,37 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
+        // Tên website
         DB::table('settings')->insert([
-            'key'           => 'contact_email',
-            'name'          => 'Contact form email address',
-            'description'   => 'The email address that all emails from the contact form will go to.',
-            'value'         => 'admin@updivision.com',
-            'field'         => '{"name":"value","label":"Value","type":"email"}',
+            'key'           => 'sitename',
+            'name'          => 'Tên website',
+            'description'   => '',
+            'value'         => 'Website Đội công tác xã hội HUTECH',
+            'field'         => '{"name":"value","label":"Giá trị","type":"text"}',
             'active'        => 1,
         ]);
 
+        // Keywords
+        DB::table('settings')->insert([
+            'key'           => 'keywords',
+            'name'          => 'Từ khóa',
+            'description'   => 'Từ khóa cho SEO Website',
+            'value'         => 'công tác xã hội, hutech, ctxh',
+            'field'         => '{"name":"value","label":"Giá trị","type":"text"}',
+            'active'        => 1,
+        ]);
+
+        // Mô tả
+        DB::table('settings')->insert([
+            'key'           => 'description',
+            'name'          => 'Mô tả',
+            'description'   => 'Mô tả website cho SEO Website',
+            'value'         => 'Đây là website chính thức của đội công tác xã hội HUTECH.',
+            'field'         => '{"name":"value","label":"Giá trị","type":"text"}',
+            'active'        => 1,
+        ]);
+
+        /*
         DB::table('settings')->insert([
             'key'           => 'contact_cc',
             'name'          => 'Contact form CC field',
@@ -52,5 +74,6 @@ class SettingsTableSeeder extends Seeder
             'active'        => 1,
 
         ]);
+        */
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ config( 'app.locale' ) }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <title>
-      {{ isset($title) ? $title.' :: '.config('backpack.base.project_name').' Admin' : config('backpack.base.project_name').' Admin' }}
+      {{ isset($title) ? $title.' - '.config('backpack.base.project_name').' Admin' : config('backpack.base.project_name').' Admin' }}
     </title>
 
     @yield('before_styles')
@@ -45,7 +45,7 @@
 
       <header class="main-header">
         <!-- Logo -->
-        <a href="{{ url('') }}" class="logo">
+        <a href="{{ url( config('backpack.base.route_prefix', 'admin') ) }}" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini">{!! config('backpack.base.logo_mini') !!}</span>
           <!-- logo for regular state and mobile devices -->
