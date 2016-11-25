@@ -62,6 +62,20 @@ return [
             'bucket' => 'your-bucket',
         ],
 
+        'uploads' => [
+            'driver' => 'local',
+            'root' => public_path('uploads'),
+        ],
+
+        'backups' => [
+            'driver' => 'local',
+            'root'   => storage_path('backups'),
+        ],
+
+        'storage' => [
+            'driver' => 'local',
+            'root'   => storage_path(),
+        ],
     ],
 
 ];
