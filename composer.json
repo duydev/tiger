@@ -13,7 +13,8 @@
         "backpack/backupmanager": "^1.1",
         "backpack/logmanager": "^2.3",
         "backpack/settings": "^2.0",
-        "backpack/pagemanager": "^1.1"
+        "backpack/pagemanager": "^1.1",
+        "igaster/laravel-theme": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
