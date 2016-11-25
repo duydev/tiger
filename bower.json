@@ -1,0 +1,21 @@
+{
+  "name": "tiger",
+  "description": "Website CTXH HUTECH",
+  "main": "",
+  "authors": [
+    "Trần Nhật Duy <tui@duydev.me>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "duydev"
+  ],
+  "homepage": "https://github.com/duydev/tiger",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/bower",
+    "test",
+    "tests"
+  ]
+}
