@@ -126,7 +126,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_01.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_01.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -139,7 +139,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_02.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_02.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -152,7 +152,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_03.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_03.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -165,7 +165,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_04.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_04.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -189,7 +189,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_05.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_05.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -202,7 +202,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_06.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_06.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -215,7 +215,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_07.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_07.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -228,7 +228,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_08.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_08.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -252,7 +252,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_09.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_09.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -271,7 +271,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_10.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_10.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -290,7 +290,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_11.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_11.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -308,7 +308,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_12.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_12.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -338,7 +338,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_13.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_13.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -351,7 +351,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_14.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_14.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -364,7 +364,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_15.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_15.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -377,7 +377,7 @@
                                                         <div class="post clearfix">
                                                             <div class="mini-widget-thumb">
                                                                 <a href="single.html">
-                                                                    <img alt="" src="upload/widget_16.jpg" class="img-responsive">
+                                                                    <img alt="" src="{{ Theme::url( 'upload/widget_16.jpg' ) }}" class="img-responsive">
                                                                 </a>
                                                             </div>
                                                             <div class="mini-widget-title">
@@ -406,7 +406,7 @@
                                 <li>
                                     <div id="custom-search-input">
                                         <div class="input-group col-md-12">
-                                            <input type="text" class="form-control input-lg" placeholder="Search here..." />
+                                            <input type="text" class="form-control input-lg" placeholder="{{ trans( 'site.search-here' ) }}" />
                                             <span class="input-group-btn">
                                                 <button class="btn btn-primary btn-lg" type="button">
                                                     <i class="fa fa-search"></i>

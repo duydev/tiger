@@ -14,15 +14,17 @@
     <meta name="keywords" content="{{ config( 'settings.keywords' ) }}">
 
     <!-- FAVICONS -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" href="{{ Theme::url( 'images/favicon.ico' ) }}" type="image/x-icon">
+    <!--
+    <link rel="apple-touch-icon" href="{{ Theme::url( 'images/apple-touch-icon.png' ) }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ Theme::url( 'images/apple-touch-icon-57x57.png' ) }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ Theme::url( 'images/apple-touch-icon-72x72.png' ) }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ Theme::url( 'images/apple-touch-icon-76x76.png' ) }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ Theme::url( 'images/apple-touch-icon-114x114.png' ) }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ Theme::url( 'images/apple-touch-icon-120x120.png' ) }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ Theme::url( 'images/apple-touch-icon-144x144.png' ) }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ Theme::url( 'images/apple-touch-icon-152x152.png' ) }}">
+    -->
 
     <!-- TEMPLATE STYLES -->
     {!! Theme::css( 'css/bootstrap.css' ) !!}
@@ -41,15 +43,14 @@
     <div id="wrapper">
         @include('components.logo')
         @include('components.header')
-        <div class="container sitecontainer single-wrapper bgw">
-            @yield('content')
-        </div><!-- end container -->
+        @yield('content')
 		@include('components.footer')
 		@include('components.footer-wrap')
     </div><!-- end wrapper -->
     <!-- END SITE -->
-    {{!! Theme::js( 'js/jquery.min.js' ) !!}}
-    {{!! Theme::js( 'js/bootstrap.js' ) !!}}
-    {{!! Theme::js( 'js/plugins.js' ) !!}}
+    {!! Theme::js( 'js/jquery.min.js' ) !!}
+    {!! Theme::js( 'js/bootstrap.js' ) !!}
+    {!! Theme::js( 'js/plugins.js' ) !!}
+    {!! Asset::scripts() !!}
 </body>
 </html>

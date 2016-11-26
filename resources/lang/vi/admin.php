@@ -11,5 +11,12 @@ return [
 	'login'          => 'Đăng nhập',
 	'register'       => 'Đăng ký',
 	'view-site'      => 'Xem trang',
+	'news'  => 'Tin tức',
+	'menu'  => 'Menu',
+	'pages' => 'Trang',
+	'article' => 'Bài viết',
+	'category' => 'Chủ đề',
+	'tags' => 'Tag',
+	'tag'  => 'Tag',
 
 ];

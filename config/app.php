@@ -151,6 +151,8 @@ return [
         igaster\laravelTheme\themeServiceProvider::class,
         Orchestra\Asset\AssetServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Backpack\MenuCRUD\MenuCRUDServiceProvider::class,
+        Backpack\NewsCRUD\NewsCRUDServiceProvider::class,
 
         /*
          * Application Service Providers...

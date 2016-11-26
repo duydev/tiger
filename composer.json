@@ -16,7 +16,9 @@
         "backpack/pagemanager": "^1.1",
         "igaster/laravel-theme": "^1.1",
         "orchestra/asset": "~3.0",
-        "orchestra/support": "~3.0"
+        "orchestra/support": "~3.0",
+        "backpack/MenuCRUD": "^1.0",
+        "backpack/newscrud": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

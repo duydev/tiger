@@ -21,6 +21,19 @@
           <!-- ================================================ -->
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('admin.dashboard') }}</span></a></li>
 
+          <li class="treeview">
+              <a href="#"><i class="fa fa-newspaper-o"></i> <span>{{ trans('admin.news') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/article') }}"><i class="fa fa-newspaper-o"></i> <span>{{ trans('admin.article') }}</span></a></li>
+                <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/category') }}"><i class="fa fa-list"></i> <span>{{ trans('admin.category') }}</span></a></li>
+                <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/tag') }}"><i class="fa fa-tag"></i> <span>{{ trans('admin.tags') }}</span></a></li>
+              </ul>
+          </li>
+
+          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/page') }}"><i class="fa fa-file-o"></i> <span>{{ trans('admin.pages') }}</span></a></li>
+
+          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/menu-item') }}"><i class="fa fa-list"></i> <span>{{ trans('admin.menu') }}</span></a></li>
+
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/setting') }}"><i class="fa fa-cog"></i> <span>{{ trans( 'admin.settings' ) }}</span></a></li>
 
 
