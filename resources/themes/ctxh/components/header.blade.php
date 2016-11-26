@@ -13,6 +13,39 @@
 
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+                        <li class=""><a href="{{ url( '' ) }}"><i class="fa fa-home"></i> {{ trans( 'site.home' ) }}</a></li>
+                        @foreach( $menus as $menu )
+                        @if( $menu->children->isEmpty() )
+                        <li class="">
+                            @if( $menu->type == 'internal_link' )
+                            <a href="{{ url( $menu->link ) }}"> {{ $menu->name }}</a>
+                            @elseif( $menu->type == 'external_link' )
+                            <a href="{{ $menu->link }}"> {{ $menu->name }}</a>
+                            @endif
+                        </li>
+                        @else
+                        <li class="dropdown hasmenu">
+                            @if( $menu->type == 'internal_link' )
+                            <a href="{{ url( $menu->link ) }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $menu->name }} <span class="fa fa-angle-down"></span></a>
+                            @elseif( $menu->type == 'external_link' )
+                            <a href="{{ $menu->link }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $menu->name }} <span class="fa fa-angle-down"></span></a>
+                            @endif
+                            <ul class="dropdown-menu">
+                                @foreach( $menu->children as $child )
+                                <li>
+                                    @if( $child->type == 'internal_link' )
+                                    <a href="{{ url( $child->link ) }}"> {{ $child->name }}</a>
+                                    @elseif( $child->type == 'external_link' )
+                                    <a href="{{ $child->link }}"> {{ $child->name }}</a>
+                                    @endif
+                                </li>
+                                @endforeach
+                            </ul>
+                        </li>
+                        @endif
+                        @endforeach
+
+                        {{--
                         <li class=""><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
                         <li class="dropdown active yamm-fw">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="fa fa-angle-down"></span></a>
@@ -398,6 +431,7 @@
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="community.html">Forums</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        --}}
                     </ul>
                     <ul class="nav navbar-nav navbar-right searchandbag">
                         <li class="dropdown searchdropdown hasmenu">

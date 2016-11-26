@@ -6,4 +6,6 @@ return [
 	'logout' => 'Đăng xuất',
 	'register' => 'Đăng ký',
 	'search-here' => 'Tìm kiếm ở đây...',
+	'home' => 'Trang chủ',
+
 ];
