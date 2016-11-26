@@ -11,4 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get( '/', 'HomeController@index' );
+
+Route::get( '/{cSlug}', 'CategoryController@detailBySlug' );
+Route::get( '/{cSlug}/{aSlug}', 'ArticlesController@detailBySlug' );

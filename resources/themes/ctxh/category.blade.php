@@ -7,6 +7,9 @@
 
             <div class="widget">
                 <div class="large-widget m30">
+                    @if( $articles->count() == 0 )
+                    <p>Không tìm thấy bài viết nào.</p>
+                    @endif
 					@foreach( $articles as $art )
                     <div class="post clearfix">
                         <div class="post-media">
