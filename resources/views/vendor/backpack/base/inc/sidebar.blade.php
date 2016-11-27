@@ -34,6 +34,8 @@
 
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/menu-item') }}"><i class="fa fa-list"></i> <span>{{ trans('admin.menu') }}</span></a></li>
 
+          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/member') }}"><i class="fa fa-tag"></i> <span>{{ trans('admin.member') }}</span></a></li>
+
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/setting') }}"><i class="fa fa-cog"></i> <span>{{ trans( 'admin.settings' ) }}</span></a></li>
 
 
