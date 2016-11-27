@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- SITE META -->
-    <title>Techmag | Responsive Magazine Site Template</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <title>Techmag | {{ config( 'settings.sitename', '' ) }}</title>
+    <meta name="description" content="{{ config( 'settings.description', '' ) }}">
+    <meta name="author" content="{{ config( 'settings.author', '' ) }}">
+    <meta name="keywords" content="{{ config( 'settings.keywords', '' ) }}">
 
     <!-- FAVICONS -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
