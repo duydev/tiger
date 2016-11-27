@@ -9,6 +9,8 @@ return [
 	'settings' => 'Cài đặt',
 	'setting' => 'Cài đặt',
 	'general' => 'Chung',
-
+	'administration' => 'QUẢN TRỊ',
+	'user' => 'NGƯỜI DÙNG',
+	'image' => 'Hình ảnh',
 
 ];

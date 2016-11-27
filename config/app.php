@@ -168,6 +168,7 @@ return [
          */
 
         igaster\laravelTheme\themeServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
 
 
         /*

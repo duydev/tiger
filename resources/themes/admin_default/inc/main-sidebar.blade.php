@@ -12,7 +12,7 @@
       <div class="pull-left info">
         <p>Alexander Pierce</p>
         <!-- Status -->
-        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        <a href="#"><i class="fa fa-circle text-success"></i> {{ trans( 'admin.online' ) }}</a>
       </div>
     </div>
 
@@ -30,9 +30,11 @@
 
     <!-- Sidebar Menu -->
     <ul class="sidebar-menu">
-      <li class="header">Administration</li>
-      <!-- Optionally, you can add icons to the links -->
-      <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+      <li class="header">{{ trans( 'admin.administration' ) }}</li>
+
+      <li class="active"><a href="{{ url( config( 'admin.prefix' ) ) }}"><i class="fa fa-dashboard"></i> <span>{{ trans( 'admin.dashboard' ) }}</span></a></li>
+
+      <li><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
       <li><a href="{{ url( config( 'admin.prefix' ).'/setting' ) }}"><i class="fa fa-link"></i> <span>{{ trans( 'admin.settings' ) }}</span></a></li>
       <li class="treeview">
         <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
@@ -45,6 +47,10 @@
           <li><a href="#">Link in level 2</a></li>
         </ul>
       </li>
+
+
+      <li class="header">{{ trans( 'admin.user' ) }}</li>
+
     </ul>
     <!-- /.sidebar-menu -->
   </section>

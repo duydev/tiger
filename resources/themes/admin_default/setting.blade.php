@@ -32,6 +32,8 @@ Theme::configSet( 'page-title', trans( 'admin.settings' ) );
     <ul class="nav nav-tabs">
         <li class="active"><a href="#general" data-toggle="tab" aria-expanded="true">{{ trans( 'admin.general' ) }}</a>
         </li>
+        <li><a href="#image" data-toggle="tab" aria-expanded="true">{{ trans( 'admin.image' ) }}</a>
+        </li>
         <li class="pull-right">
 			<button type="submit" class="btn btn-primary">Lưu</button>
         </li>
@@ -50,6 +52,9 @@ Theme::configSet( 'page-title', trans( 'admin.settings' ) );
 				<label for="">Từ khóa</label>
 				<input type="text" name="keywords" id="" value="{{ config( 'settings.keywords' ) }}" class="form-control">
 			</div>
+        </div>
+        <!-- /.tab-pane -->
+        <div class="tab-pane active" id="image">
         </div>
         <!-- /.tab-pane -->
     </div>
