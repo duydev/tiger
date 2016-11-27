@@ -14,12 +14,12 @@ return [
     |--------------------------------------------------------------------------
     | File path where themes will be located.
     | Can be outside default views path EG: resources/themes
-    | Leave it null if you place your themes in the default views folder 
+    | Leave it null if you place your themes in the default views folder
     | (as defined in config\views.php)
     |--------------------------------------------------------------------------
     */
 
-    'themes_path' => null, // eg: realpath(base_path('resources/themes'))
+    'themes_path' => realpath(base_path('resources/themes')), // eg: realpath(base_path('resources/themes'))
 
 	/*
 	|--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ return [
 	| 		'asset-path' 	=> 'path-to-assets',   // defaults to: public/theme-name
 	|
 	|		// you can add your own custom keys and retrieve them with Theme::config('key');
-	| 		'key' 			=> 'value', 
+	| 		'key' 			=> 'value',
 	| 	],
 	|
 	|--------------------------------------------------------------------------
@@ -59,8 +59,14 @@ return [
 
 		'default' => [
 			'extends'	 	=> null,
-			'views-path' 	=> '',
-			'asset-path' 	=> '',
+			'views-path' 	=> 'default',
+			'asset-path' 	=> 'themes/default',
+		],
+
+		'admin_default' => [
+			'extends'	 	=> null,
+			'views-path' 	=> 'admin_default',
+			'asset-path' 	=> 'themes/admin_default',
 		],
 
 		// Add your themes here...

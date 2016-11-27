@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@index' );
+
+Route::group(['prefix' => config( 'admin.prefix' ), 'middleware' => [ 'setTheme:'.config( 'admin.theme' ) ], 'namespace' => 'Admin' ], function() {
+	Route::get('/', 'HomeController@index' );
 });
